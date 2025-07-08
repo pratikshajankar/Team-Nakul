@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website</title>
+    <!-- css link -->
+     <link rel="stylesheet" href="ecom.css">
+     <!-- bootstrap link -->
+      <link rel="stylesheet" href="Assets/css/bootstrap.min.css">
+      <!-- fontawesome link -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+       <link rel="stylesheet" href="Assets/js/bootstrap.bundle.min.js">
+
+</head>
+<body>
+    <!-- Header -->
+     <div class="section">
+        <div class="container">
+            <div class="row mt-5">
+                <!-- logo -->
+                <div class="col-2 col-sm-12 col-md-2 col-lg-2 p-4">
+                    <a href="">
+                        <img src="Images/freshcart-logo.svg" alt="cartimg">
+                    </a>
+                </div>
+                <div class="col-5 col-sm-6 col-md-5 col-lg-5 p-4">
+                    <!-- SearchBar -->
+                    <form action="">
+                        <div class="input-group">
+                            <input type="search" placeholder="Search for products" class="form-control">
+                            <button type="button" class="btn searchbtn btn-primary">Search</button>
+                        </div>
+                    </form>
+                </div>
+                <!-- notification,signup,myorder,shoppingcart -->
+                <div class="col-5 col-sm-12 col-md-5 col-lg-5">
+                    
+                    <div class="Menucontent d-flex align-item-center justify-content-center">
+                        <!-- notification -->
+                         <div class="show  position-relative">
+                    <div class="notification text-center  m-4">
+                    <a href="" class="text-decoration-none position-relative">
+                        <i class="fa-regular fa-bell text-secondary"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">1</span>
+                    </a>
+                    <p class="text-secondary">Notification</p>
+                    </div>
+                    <!-- <div x-placement="bottom-start" aria-labelledby="" class="dropdown-menu dropdown-menu-lg p-0" data-popper-reference-hidden="false" data-popper-escaped="false" data-popper-placement="bottom-start" style="position: absolute; inset: 0px auto auto 0px; transform: translate3d(0px, 43.2px, 0px);">
+                        <div>
+                            <h6 class="px-4 border-bottom py-3 mb-0">Notification</h6>
+                            <p class="mb-0 px-4 py-3">
+                                <a href="/signin">Sign in </a>
+                                or
+                                <a href="/signup"> register </a>
+                                in or so you don t have to enter your details every time
+                            </p>
+                        </div>
+                    </div> -->
+
+                    </div>
+                    <!-- sign-up -->
+                     <!-- div trigger modal -->
+                    <div class="sign-up text-center m-4" data-bs-toggle="modal" data-bs-target="#signmodal">
+                        <a href="" class="text-decoration-none">
+                            <i class="fa-regular fa-circle-user text-secondary"></i>
+                        <p class="text-secondary">Sign up</p>
+                        </a>
+                    </div>
+                    <!-- signinmodal -->
+                    <div class="modal fade" id="signmodal" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header border-0">
+                                    <h5 class="modal-title">Sign Up</h5>
+                                    <button type="button" class="btn-close" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form action="signin">
+                                        <div class="mb-3">
+                                            <label for="fullname" class="form-label">Name</label>
+                                            <input type="text" class="form-control" placeholder="Enter Your Name" required>
+                                            <div class="invalid-feedback">Please enter name.</div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="email" class="form-label">Email address</label>
+                                            <input type="email" class="form-control" placeholder="Enter Email address" required>
+                                            <div class="invalid-feedback">Please enter email.</div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="pass" class="form-label">Password</label>
+                                            <input type="password" class="form-control" placeholder="Enter Password" required>
+                                            <div class="invalid-feedback">Please enter password.</div>
+                                        <span class="form-text">
+                                            "By Signup, you agree to our"
+                                            <a href="">Terms of Service</a>
+                                            "&"
+                                            <a href="">Privacy Policy</a>
+                                        </span>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Sign Up</button>
+                                    </form>
+                                </div>
+                                <div class="modal-footer border-0 justify-content-center">
+                                    "Already have an account?"
+                                    <a href="">Sign in</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- check order -->
+                    <div class="myorder text-center   m-4">
+                        <a href="" class="text-decoration-none text-secondary">
+                            <i class="fa-solid fa-bag-shopping"></i>   
+                            <p class="text-secondary">My Orders</p>
+                        </a>
+                    </div>
+                    <div class="shopping text-center   m-4">
+                        <a href="" class="text-decoration-none">
+                            <i class="fa-solid fa-cart-shopping text-secondary"></i> 
+                           <p class="text-secondary">Shopping Cart</p>
+                        </a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+     </div>
+     <!-- Navbar -->
+      <section>
+      <nav class="navbar-default position-relative">
+        <div class="container px-0 d-flex justify-content-space-between">
+            <div class="nav-body d-flex p-0 overflow-y-visible">
+                <li class="me-3 d-none d-lg-block show dropdown ms-1 position-relative">
+                    <button type="button" class="btn">
+                        <i class="fa-solid fa-bars"></i>
+                        All Categories
+                    </button>
+                    <ul class="dropdown-menu-lg dropdown-menu show d-block invisible">
+                        <li class="dropdown-menu-list">
+                            <a href="" class="dropdown-menu-item d-flex justify-content-between mb-1 py-1">
+                                <div>
+                                    <img src="Images/fruit&vegImg.svg" alt="fruitvegimg">
+                                    <span class="ms-1">Fruits & Vegitables</span>
+                                </div>
+                                <div>
+                                    <i class="feather-icon icon-chevron-right"></i>
+                                </div>
+                            </a>
+                            <div class="dropdown-menu-list-submenu position-absolute top-0 start-100% invisible">
+                                <div>
+                                    <ul class="ps-0 list-style-none text-secondary list-style-none ps-0">
+                                        <li class="list-group-item d-block position-relative d-block position-relative">
+                                            <a href="" class="dropdown-item">Fresh Vegetables</a>
+                                        </li>
+                                        <li class="list-group-item d-block position-relative">
+                                            <a href="" class="dropdown-item">Herbs & Seasonings</a> 
+                                        </li>
+                                        <li class="list-group-item d-block position-relative">
+                                            <a href="" class="dropdown-item">Fresh Fruits</a>
+                                        </li>
+                                        <li class="list-group-item d-block position-relative">
+                                            <a href="" class="dropdown-item">Organic Fruits & Vegetables</a>
+                                        </li>
+                                        <li class="list-group-item d-block position-relative">
+                                            <a href="" class="dropdown-item">Cuts & Sprouts</a>
+                                        </li>
+                                        <li class="list-group-item d-block position-relative">
+                                            <a href="" class="dropdown-item">Exotic Fruits & Veggies</a>
+                                        </li>
+                                        <li class="list-group-item d-block position-relative">
+                                            <a href="" class="dropdown-item">Flower Bouquets, Bunches</a>
+                                        </li>
+                                        <li class="list-group-item d-block position-relative">
+                                            <a href="" class="dropdown-item">Specialty</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <ul class="ps-0 list-style-none text-secondary list-style-none ps-0">
+                                        <li class="list-group-item d-block position-relative">
+                                            <a href="" class="dropdown-item">Banana & Papaya</a>
+                                        </li>
+                                        <li class="list-group-item d-block position-relative">
+                                            <a href="" class="dropdown-item">Kiwi, citrus Fruit</a> 
+                                        </li>
+                                        <li class="list-group-item d-block position-relative">
+                                            <a href="" class="dropdown-item">Apples & Pomegranate</a>
+                                        </li>
+                                        <li class="list-group-item d-block position-relative">
+                                            <a href="" class="dropdown-item">Seasonal Fruits</a>
+                                        </li>
+                                        <li class="list-group-item d-block position-relative">
+                                            <a href="" class="dropdown-item">Mangoes</a>
+                                        </li>
+                                        <li class="list-group-item d-block position-relative">
+                                            <a href="" class="dropdown-item">Fruit Baskets</a>
+                                        </li> 
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="dropdown-menu-list">
+                            <a href="" class="dropdown-menu-item d-flex justify-content-between mb-1 py-1">
+                                <div>
+                                    <img src="Images/snacks&manchisImg.svg" alt="fruitvegimg">
+                                    <span class="ms-1">Snacks Munchies</span>
+                                </div>
+                                <div>
+                                    <i class="feather-icon icon-chevron-right"></i>
+                                </div>
+                            </a>
+                            <div class="dropdown-menu-list-submenu position-absolute top-0 start-100% invisible">
+                                <div>
+                                    <ul class="ps-0 list-style-none text-secondary list-style-none ps-0">
+                                        <li class="list-group-item d-block position-relative d-block position-relative">
+                                            <a href="" class="dropdown-item">Chips & Crisps</a>
+                                        </li>
+                                        <li class="list-group-item d-block position-relative">
+                                            <a href="" class="dropdown-item">Nachos</a> 
+                                        </li>
+                                        <li class="list-group-item d-block position-relative">
+                                            <a href="" class="dropdown-item">Popcorn</a>
+                                        </li>
+                                        <li class="list-group-item d-block position-relative">
+                                            <a href="" class="dropdown-item">Bhujia & Mixtures</a>
+                                        </li>
+                                        <li class="list-group-item d-block position-relative">
+                                            <a href="" class="dropdown-item">Namkeen Snacks</a>
+                                        </li>
+                                        <li class="list-group-item d-block position-relative">
+                                            <a href="" class="dropdown-item">Healthy Snacks</a>
+                                        </li>
+                                        <li class="list-group-item d-block position-relative">
+                                            <a href="" class="dropdown-item">Cakes & Rolls</a>
+                                        </li>
+                                        <li class="list-group-item d-block position-relative">
+                                            <a href="" class="dropdown-item">Energy Bars</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <ul class="ps-0 list-style-none text-secondary list-style-none ps-0">
+                                        <li class="list-group-item d-block position-relative">
+                                            <a href="" class="dropdown-item">Papad fryums</a>
+                                        </li>
+                                        <li class="list-group-item d-block position-relative">
+                                            <a href="" class="dropdown-item">Glucose & Milk biscuits</a> 
+                                        </li>
+                                        <li class="list-group-item d-block position-relative">
+                                            <a href="" class="dropdown-item">Energy Bars/a>
+                                        </li>
+                                        <li class="list-group-item d-block position-relative">
+                                            <a href="" class="dropdown-item">Cakes & Rolls</a>
+                                        </li>
+                                        <li class="list-group-item d-block position-relative">
+                                            <a href="" class="dropdown-item"></a>
+                                        </li>
+                                        <li class="list-group-item d-block position-relative">
+                                            <a href="" class="dropdown-item"></a>
+                                        </li> 
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </li>
+            </div>
+        </div>
+      </nav>
+      </section>
+      <!-- js cdn -->
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
